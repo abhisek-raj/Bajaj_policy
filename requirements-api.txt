@@ -1,0 +1,32 @@
+# Core API
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-dotenv>=1.0.0
+httpx>=0.25.0
+pydantic>=2.0.0
+
+# Document Processing
+unstructured>=0.10.0
+unstructured[docx]>=0.10.0
+unstructured[pdf]>=0.10.0
+python-magic>=0.4.27
+python-magic-bin>=0.4.14; sys_platform == 'win32'
+
+# Existing Dependencies
+streamlit>=1.28.0
+langchain>=0.1.0
+langchain-huggingface>=0.0.6
+langchain-community>=0.0.10
+langchain-core>=0.1.0
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+pypdf>=3.17.0
+pandas>=2.0.0
+plotly>=5.17.0
+huggingface-hub>=0.19.0
+transformers>=4.35.0
+torch>=2.0.0
+numpy>=1.24.0

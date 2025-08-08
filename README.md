@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bajaj Policy Assistant API
 
 A FastAPI service for processing insurance policy documents and answering questions using LLM-powered semantic search.
@@ -83,3 +84,6 @@ black .
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+=======
+# BAJAJ_POLICY
+>>>>>>> 586cb29cb3e9490f87c7037fc3ba4724cc30f0f4

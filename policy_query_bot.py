@@ -1054,9 +1054,6 @@ def chat_bot_page(translations):
 # -------- Vector Explorer Page --------
 def vector_explorer_page(translations):
     st.markdown(f"""
-    <div style="text-align: center; margin-bottom: 1rem;">
-        <h2 style="color: #ff0000; font-weight: bold;">Team Artilligence of HackRx</h2>
-    </div>
     <div class="main-header">
         <h1>🔍 {translations['vector_explorer']}</h1>
         <p>Search and explore the contents of your insurance policy database</p>
@@ -1202,9 +1199,6 @@ def vector_explorer_page(translations):
 # -------- Analytics Page --------
 def analytics_page(translations):
     st.markdown(f"""
-    <div style="text-align: center; margin-bottom: 1rem;">
-        <h2 style="color: #ff0000; font-weight: bold;">Team Artilligence of HackRx</h2>
-    </div>
     <div class="main-header">
         <h1>📊 {translations['analytics']}</h1>
         <p>Advanced analytics and insights about insurance policy performance</p>
@@ -1300,7 +1294,7 @@ def sidebar():
         # Navigation
         page = st.selectbox(
             "Choose a page:",
-            ["🏠 Dashboard", "💬 Chat Bot", "🔍 Vector Explorer", "📊 Analytics"]
+            ["🔍 Vector Explorer", "🏠 Dashboard", "💬 Chat Bot", "📊 Analytics"]
         )
         
         st.markdown("---")
@@ -1344,12 +1338,12 @@ def main():
     translations = LANGUAGES[selected_language]
     
     # Page routing
-    if page == "🏠 Dashboard":
+    if page == "🔍 Vector Explorer":
+        vector_explorer_page(translations)
+    elif page == "🏠 Dashboard":
         dashboard_page(translations)
     elif page == "💬 Chat Bot":
         chat_bot_page(translations)
-    elif page == "🔍 Vector Explorer":
-        vector_explorer_page(translations)
     elif page == "📊 Analytics":
         analytics_page(translations)
 
